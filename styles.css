@@ -1,0 +1,118 @@
+/* Background and general layout */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(230,45,253,1) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for the main app */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+button {
+    background-color: rgba(34, 193, 195, 0.8);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(34, 193, 195, 1);
+}
+
+/* Heading styling */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Popup Card Styling */
+.popup-hidden {
+    display: none;
+}
+
+.popup-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    max-width: 90%;
+}
+
+.popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.reset-button {
+    background-color: rgba(230, 45, 253, 0.8);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.reset-button:hover {
+    background-color: rgba(230, 45, 253, 1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+#resultHeading{
+    color: #000 ;
+}
